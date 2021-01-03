@@ -1,0 +1,167 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  // margin-bottom: -19rem;
+  padding-bottom: 19rem;
+}
+
+/////////////////////////
+// Landing Page
+.header {
+  position: relative;
+  // background-image: url(../img/hero.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+  // clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  @include respond(phone) {
+    height: 70vh;
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 25%;
+    width: $container;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+
+    @include respond(phone) {
+      top: 35%;
+    }
+  }
+}
+
+.footer {
+  //   margin-top: 5rem;
+  background-color: var(--color-primary);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 14rem;
+}
+
+// .page-container {
+//   position: relative;
+//   min-height: 100vh;
+// }
+
+// .body {
+//   padding-bottom: 14rem;
+// }
+
+.article-preview {
+  margin-bottom: 10rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--color-black);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+/////////////////////////
+// Article List Page
+.article-list {
+  //   margin-top: 14rem;
+  margin-bottom: 8rem;
+
+  @include respond(phone) {
+    margin-bottom: 2rem;
+  }
+}
+
+/////////////////////////
+// Article View Page
+.article-view {
+  margin-top: 5rem;
+
+  @include respond(phone) {
+    margin-top: 2.5rem;
+  }
+}
+
+/////////////////////////
+// Misc.
+.container {
+  max-width: $container;
+  // position: relative;
+  margin: 0 auto;
+}
+
+.dark-bg {
+  background-color: #353839;
+}
+
+/////////////////////////
+// 404 Page
+.error404 {
+  background-image: url(../img/pattern.png);
+  // background-position: center;
+  background-repeat: repeat;
+  // background-size: cover;
+  // height: 100vh;
+  width: 100%;
+
+  &--text {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+
+    & + a {
+      margin-top: 1rem;
+    }
+  }
+}
+
+/////////////////////////
+// Contact Page
+.section {
+  &-form {
+    // margin-top: 12rem;
+
+    & h2 {
+      margin-bottom: 3rem;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &-email {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+}
+
+/////////////////////////
+// About Page
+.about {
+  //   margin-top: 12rem;
+}
+
+.contributions {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    padding: 0 2rem;
+  }
+}

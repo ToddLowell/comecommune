@@ -1,0 +1,52 @@
+:root {
+  --text-primary: #333;
+  --bg-primary: #fff;
+
+  --color-primary: #1157e6;
+
+  --color-grey: #eee;
+
+  --color-black: #333;
+  --color-white: #fff;
+}
+
+$container: 960px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(phone) {
+    font-size: 50%; //  1rem = 8px
+  }
+
+  @include respond(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--text-primary);
+
+  background-color: var(--bg-primary);
+}
+
+//300 = light
+//400 = regular
+//500 = medium
+//600 = semi-bold
+//700 = bold
