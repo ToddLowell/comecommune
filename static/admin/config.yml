@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: ToddLowell/ComeCommune
+  name: git-gateway
   branch: master
 
 site_url: https://comecommune.netlify.app
