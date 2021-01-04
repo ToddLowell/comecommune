@@ -2,7 +2,10 @@
 title: "On Pain and Suffering: A Christmas Reflection"
 path: on-pain-and-suffering-a-christmas-reflection
 date: 2020-12-27T14:11:58.325Z
-image_alt: ""
+image: /assets/vlad-shalaginov-apwzk3nuphm-unsplash.jpg
+image_alt: A man's hand pushing away the twilight in a gesture of rejection, but
+  the strain can be seen.
+image_credit: Unsplash, Vlad Shalaginov
 ---
 Every year I try to write something festive for Christmas but in honesty I found it hard to muster up enough Christmas ‘spirit’ to be able to write something with integrity. I don’t want to write something for the sake of writing it and being pretentious is often worse than silence. Over the past few months I have had in the back of my mind a few ideas that I wanted to expound on in writing, ideas that related to the interaction of the Christian faith with the imprint of God in the creation of man by virtue of His common grace bestowed upon us. At the same time, I wanted to write an encouraging message for Christmas, which this years’ Christmas warranting this the most. I figured I could meet these two objectives with an essay on pain and suffering. Indeed that is not a typical Christmas message, and how can that be encouraging? I hope to do this by reframing pain and suffering in light of several key moments in several artistic works.
 
