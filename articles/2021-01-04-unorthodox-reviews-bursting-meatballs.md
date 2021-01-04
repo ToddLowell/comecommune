@@ -1,10 +1,11 @@
 ---
 title: Unorthodox Reviews - Bursting Meatballs
-path: "11"
+path: '11'
 date: 2020-08-19T10:42:44.936Z
-image: /articles/assets/11.jpeg
+image: /assets/11.jpeg
 image_alt: bursting meatball
 ---
+
 To fellow readers who have visited Go Noodle House, you would be familiar with the bursting meatball. It is a meatball
 which is made up of two layers, both being meat. The inner layer is a clump of darker juicier minced meat acting as
 filling while the outer layer has a slightly more chewy texture and is normally what makes up a single layered
@@ -76,7 +77,7 @@ attune my strategy in both digging and chewing. As mentioned earlier, the heat s
 relying too much either strategy, whether it be 1) the productivity-maximising or 2) adversity to danger, will withhold
 from me the fine-tuning exercise. The fine-tuning exercise of chewing a bursting meatball.
 
-- - -
+---
 
 \[1] Comment below what the right way to eat a meatball is
 

@@ -10,9 +10,11 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
+        extensions: [`.mdx`, `.md`],
         defaultLayouts: {
           default: require.resolve('./src/components/layout.js'),
         },
@@ -23,8 +25,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'posts',
-        path: `${__dirname}/posts`,
+        name: 'articles',
+        path: `${__dirname}/articles`,
       },
     },
     {

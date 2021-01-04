@@ -1,11 +1,12 @@
 ---
 title: Char Kuey Teow and Ecclesiastes 2:18-20
-path: "6"
+path: '6'
 date: 2020-07-21T09:44:17.130Z
-image: /articles/assets/6.jpg
+image: /assets/6.jpg
 image_alt: Char Koay Teow Stall
 image_credit: HUNGRYGOWHERE.MY
 ---
+
 It is uncontroversial to posit as an axiom (at least among Malaysians) that the food in Penang is delicious. Every few years I would take a road trip with family (and one year with friends) to keep our palate constantly refreshed by the taste of Penang. Being alive for slightly over a couple decades, the quality of food in my opinion has been rather consistent. However, the same cannot be said for my grandparents.
 
 Our constant chats in the car journey there often involve deciding which hawker stall to order food from. One common point in the conversation that comes up is that the quality of food has declined, compared to the past when either the cook's parent or grandparent was running the stall. Comments to this effect were laid against most of the ‘famous’ and ‘touristy’ stalls that were suggested to be visited. Of course, this phenomenon may be simply rhetoric of the “Good Ol’ Days” which we not only the most senior, but all of us are guilty of. In any case, the taste of food is subjective and many people would disagree with my grandparents’ taste buds. But assuming my grandparents are right, the implications of their observation may run deep into questions of work and identity.
@@ -33,8 +34,8 @@ Perhaps it is best to enjoy our “toil”, by eating and drinking the fruit of 
 
 That said, the Qoheleth’s reflections above should not be understood as advocating blissful ignorance. The Qoheleth recognised the provision of God, i.e. the “hand of God” where both the fruit of labour and this philosophy of labour originates. Indeed, “apart” from God, the wisdom of this perspective on work does not lie (Ecclesiastes 2:26). On our own, “toil” is to be hated because no matter how much harvest we gather from it, our worldly lives are not permanent (Ecclesiastes 1:3-11). But when we work for one who is permanent, so permanent are the fruits of our labour.
 
-- - -
+---
 
-*This blog post is largely inspired by “Every Good Endeavour” by Tim Keller and the podcast The Anthropocene Reviewed by John Green. This writer is hugely appreciative of them and recommends their laborious work to all readers.*
+_This blog post is largely inspired by “Every Good Endeavour” by Tim Keller and the podcast The Anthropocene Reviewed by John Green. This writer is hugely appreciative of them and recommends their laborious work to all readers._
 
-*This blog post is not intended to insult any Char Kuey Teow vendors, or Char Kuey Teow in general, nor any Singaporean Char Kuey Teow cooks.*
+_This blog post is not intended to insult any Char Kuey Teow vendors, or Char Kuey Teow in general, nor any Singaporean Char Kuey Teow cooks._

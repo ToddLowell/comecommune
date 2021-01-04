@@ -14,10 +14,10 @@ export default () => {
 
           <div className="article__display">
             {posts
-              .sort((a, b) => b.id - a.id)
+              .sort((a, b) => new Date(b.date) - new Date(a.date))
               .map((post) => (
                 // <pre>{JSON.stringify(post, null, 2)}</pre>
-                <PostPreview key={post.slug} post={post} />
+                <PostPreview key={post.title} post={post} />
               ))}
           </div>
         </div>

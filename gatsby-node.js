@@ -1,32 +1,35 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     query {
-      allMdx {
+      allMdx(sort: { fields: [frontmatter___date], order: ASC }) {
         nodes {
           frontmatter {
-            id
-            slug
+            title
+            path
           }
         }
       }
     }
   `);
+
   if (result.errors) {
     reporter.panic('Failed to Create Post Pages', result.errors);
   }
 
   const posts = result.data.allMdx.nodes;
 
-  posts.forEach((post) => {
-    const id = post.frontmatter.id;
+  posts.forEach((post, i) => {
+    const title = post.frontmatter.title;
+    const title_prev = posts[i - 1] ? posts[i - 1].frontmatter.title : '';
+    const title_next = posts[i + 1] ? posts[i + 1].frontmatter.title : '';
 
     actions.createPage({
-      path: `/articles/${post.frontmatter.slug}`,
+      path: `/articles/${post.frontmatter.path}`,
       component: require.resolve('./src/templates/post.js'),
       context: {
-        id,
-        id_prev: id - 1,
-        id_next: id + 1,
+        title,
+        title_prev,
+        title_next,
       },
     });
   });

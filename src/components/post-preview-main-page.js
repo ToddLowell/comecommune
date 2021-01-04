@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 
 const PostPreview = ({ post }) => {
-  const [month, day] = post.date.replace(',', '').split(' ');
+  const [, month, day] = new Date(post.date).toDateString().split(' ');
 
   const ArticleLink = styled(Link)`
     text-decoration: none;
@@ -16,7 +16,7 @@ const PostPreview = ({ post }) => {
         <div className="article__preview--day">{day}</div>
         <div className="article__preview--month">{month.substr(0, 3)}</div>
       </div>
-      <ArticleLink to={`/articles/${post.slug}`}>
+      <ArticleLink to={`/articles/${post.path}`}>
         <div className="article__preview--name">
           <h2 className="heading__tertiary">{post.title}</h2>
           <p className="paragraph">{post.excerpt}</p>

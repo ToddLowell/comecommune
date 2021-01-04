@@ -1,13 +1,14 @@
 ---
 title: Don’t know the difference between mandatory and discretionary? Someone
   must (or may) die...
-path: "7"
+path: '7'
 date: 2020-07-22T10:22:55.506Z
-image: /articles/assets/7.webp
+image: /assets/7.webp
 image_alt: according to the Prisons Department, some 800 people are now on death
   row after being convicted of drug trafficking
 image_credit: New Strait Times
 ---
+
 It is an old adage that lawyers are cunning with words. From this adage perhaps an attitude has been formed where the laymen leave the technical legal jargon solely to the lawyers, only browsing through it when they themselves have a problem with the law. To some extent, the complicated drafting of laws render this outcome inevitable, as legal training is needed to comprehend certain complex provisions. However, there is a fear that the complexity in legal provisions have produced an attitude where people do not bother enough with the content of the law.
 
 For the purposes of this blog, I refer to a comment by MP of Singapore Pritam Singh. Singh in his [Speech on the Misuse of Drugs Amendment Bill](https://www2.wp.sg/speech-on-misuse-of-drugs-amendment-bill-mp-pritam-singh/)> referred to TheOnlineCitizen poll conducted sometime in 2011 which indicated that many Singaporeans did not know the difference between the application of a discretionary death penalty versus the mandatory death penalty. This is worrying for two reasons. Firstly, the results of the survey will be unrepresentative of public opinion. Secondly, one’s opinion in a survey in factored in in policy decision-making regardless of how informed that view is.
@@ -52,6 +53,6 @@ Reaching the end, I must state out some assumptions. One core one is that this w
 
 This blog post is not intended to attack the views and character of the Singaporean people, but simply acts as a gentle nudge for better survey answering practices. This blog post must also be sufficiently self-aware and not hypocritical, seeing [Roger Hood for the Oxford Centre of Criminology’s report](https://www.deathpenaltyproject.org/wp-content/uploads/2018/02/Malaysia-report.pdf) that only a shocking 8% of the Malaysian sample were “very concerned” about the issue of death penalty and only 41% knew that the death penalty is mandatory for all three types of crimes mentioned in the survey (Murder, Drug trafficking, Firearm offences). We need to dispel the myth that only criminal lawyers need to know these things when it comes to literally matters of life and death.
 
-- - -
+---
 
-*This writer is hugely indebted to Edward Lee for his contribution of ideas and for editing the final draft and to Nathanael Chuah for his prompting of the blog in the first place as well as his contribution of ideas.*
+_This writer is hugely indebted to Edward Lee for his contribution of ideas and for editing the final draft and to Nathanael Chuah for his prompting of the blog in the first place as well as his contribution of ideas._

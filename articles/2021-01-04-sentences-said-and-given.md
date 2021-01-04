@@ -1,10 +1,11 @@
 ---
 title: Sentences said and given
-path: "8"
+path: '8'
 date: 2020-07-28T10:27:24.840Z
-image: /articles/assets/8-1.webp
+image: /assets/8-1.webp
 image_alt: image of person
 ---
+
 The 28th of July will be a day all Malaysians, and perhaps friends of other nationalities will remember.
 It is the end of a daunting trial where former (emphasis duly added) Prime Minister of Malaysia, Najib
 Razak, has been convicted of crimes related to misuse of public funds and government corruption, namely:
@@ -118,12 +119,12 @@ The High Court in Malaysia (the tier at which Najib was tried and convicted) may
 consecutive or concurrent approach to sentencing. For a brief period of time, Malaysian criminal law
 could have taken only a consecutive approach to sentencing. [S8 of the Criminal Procedure Code (Amendment) Act 2013 states](https://www.cljlaw.com/files/bills/pdf/2013/MY_FS_BIL_2013_10.pdf):
 
-![Ammendment of section 282 screenshot](/articles/assets/8-2.png)
+![Ammendment of section 282 screenshot](/assets/8-2.png)
 
 The amendment came as a public outcry with respect to the rape of minors being too lenient, as crimes of
 the same “nature” would be sentenced in a single “transaction” [as the Star put it](https://www.thestar.com.my/news/nation/2013/09/27/no-more-concurrent-sentences-convicts-will-now-serve-time-for-each-offence-consecutively). Back to our case, Najib’s offences are criminal in nature and a concurrent approach to sentencing would have been ousted if the amendment had gotten through. But as I accessed the Criminal Procedure Code today on the 28th of July 2020 (remember this momentous date), I find a [lacking](http://www.agc.gov.my/agcportal/uploads/files/Publications/LOM/EN/Act%20593%20-%20Criminal%20Procedure%20Code.pdf) of s282(e).
 
-![Provisions as to execution of sentences of imprisonment](/articles/assets/8-3.png)
+![Provisions as to execution of sentences of imprisonment](/assets/8-3.png)
 
 ## The arguments for and against, and a possible middle ground
 
@@ -155,4 +156,4 @@ Appeal and contains the process and grounds that Najib’s counsel may raise in 
 advantage of the transparency of the law that pertains to court procedure and access to justice by
 clicking the hyperlink above.
 
-*For those who are keen to know more about sentencing in Malaysia, AskLegal.MY has a [really useful article](*https://asklegal.my/p/malaysian-courts-punish-criminals-jail-rotan-fine*) which sets out the law and the theoretical reasoning on criminal sentencing in Malaysia in general.*
+_For those who are keen to know more about sentencing in Malaysia, AskLegal.MY has a [really useful article](_https://asklegal.my/p/malaysian-courts-punish-criminals-jail-rotan-fine*) which sets out the law and the theoretical reasoning on criminal sentencing in Malaysia in general.\*

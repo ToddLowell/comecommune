@@ -29,8 +29,8 @@ export default () => {
   `);
 
   const posts = usePosts();
-  const row1 = posts.sort((a, b) => b.id - a.id).slice(0, 2);
-  const row2 = posts.sort((a, b) => b.id - a.id).slice(2, 4);
+  const row1 = posts.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 2);
+  const row2 = posts.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(2, 4);
 
   return (
     <Layout>
@@ -52,13 +52,13 @@ export default () => {
 
           <div className="article__list pd-bt-sm">
             {row1.map((post) => (
-              <PostPreview key={post.slug} post={post} />
+              <PostPreview key={post.title} post={post} />
             ))}
           </div>
 
           <div className="article__list">
             {row2.map((post) => (
-              <PostPreview key={post.slug} post={post} />
+              <PostPreview key={post.title} post={post} />
             ))}
           </div>
           <Link to="/articles" className="btn">
