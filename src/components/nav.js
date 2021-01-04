@@ -1,51 +1,29 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
 import logo from '../img/logo-white.png';
+import { css } from '@emotion/react';
 
 class Navbar extends Component {
-  openMobileNavbar() {
-    this.nav.classList.add('opened');
-    this.navToggle.setAttribute('aria-label', 'Close navigation menu.');
-  }
-
-  closeMobileNavbar() {
-    this.nav.classList.remove('opened');
-    this.navToggle.setAttribute('aria-label', 'Open navigation menu.');
-  }
-
   componentDidMount() {
-    this.nav = document.getElementById('topnav');
+    this.nav = document.querySelector('.navbar');
     this.navToggle = this.nav.querySelector('.menu-toggle');
 
-    this.navMenu = this.nav.querySelector('.nav-menu');
-    this.navLinks = this.nav.querySelector('.nav-links');
-
     this.navToggle.addEventListener('click', (evt) => {
-      // evt.preventDefault();
-
-      console.log('clicked');
-      if (this.nav.classList.contains('opened')) {
-        this.closeMobileNavbar();
-      } else {
-        this.openMobileNavbar();
-      }
-    });
-
-    this.navLinks.addEventListener('click', (evt) => {
-      evt.stopPropagation();
-      // evt.preventDefault();
-    });
-
-    this.navMenu.addEventListener('click', (evt) => {
+      this.nav.classList.toggle('opened');
       evt.preventDefault();
-      this.closeMobileNavbar();
     });
+
+    // set style for index page
+    if (window.location.pathname === '/') {
+      this.nav.style.backgroundColor = 'transparent';
+      this.nav.style.position = 'absolute';
+    }
   }
 
   render() {
     return (
-      <div className="navbar" id="topnav">
-        <nav className="navbar__nav nav-container container navbar__list">
+      <div className="navbar">
+        <nav className="nav-container container">
           <Link to="/" className="logo">
             <img src={logo} alt="logo" className="navbar__home--icon" />
             <span className="navbar__home--text">
@@ -53,10 +31,36 @@ class Navbar extends Component {
             </span>
           </Link>
           {/* only show on mobile */}
-          <button type="button" className="menu-toggle" aria-label="Open navigation menu">
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
+          <button
+            className="menu-toggle"
+            css={css`
+              cursor: pointer;
+              border: none;
+              background-color: transparent;
+              width: 40px;
+              height: 40px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+
+              &:focus {
+                outline: none;
+              }
+
+              .bar {
+                display: block;
+                width: 30px;
+                height: 4px;
+                margin: 2px;
+                transition: all 0.2s ease;
+                background-color: var(--color-grey);
+              }
+            `}
+          >
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
           </button>
           <div className="nav-menu">
             <ul className="nav-links">

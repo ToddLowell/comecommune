@@ -6,13 +6,8 @@
 }
 
 .navbar {
-  // position: absolute;
   z-index: 100;
-  //   left: 50%;
-  //   top: 0;
-  //   transform: translateX(-50%);
   width: 100%;
-  // margin: 0 auto;
   background-color: #353839;
 
   @include respond(tab-port) {
@@ -23,23 +18,13 @@
   &--header {
     position: absolute;
     z-index: 100;
-    //   left: 50%;
     top: 0;
-    //   transform: translateX(-50%);
     background-color: transparent;
-  }
-
-  &__list {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
   }
 
   &__home {
     margin-right: auto;
     color: var(--color-primary);
-    @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
     font-family: 'Abel', sans-serif;
     font-size: 2.4rem;
     text-transform: uppercase;
@@ -60,7 +45,6 @@
   }
 
   &__item {
-    // flex: 1;
     padding: 3rem;
 
     @include respond(phone) {
@@ -95,121 +79,85 @@
 }
 
 // Extra Navbar stuff
-#topnav {
-  // position: fixed;
+.navbar {
   height: 65px;
-  // background-color: hsl(0, 0%, 20%);
-  // left: 0;
-  // right: 0;
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
 
-#topnav .nav-container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  align-items: center;
-}
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+  }
 
-.menu-toggle {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  .nav-menu {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 101;
+  }
 
-  &:focus {
-    outline: none;
+  .nav-links {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 }
 
-.icon-bar {
-  display: block;
-  width: 25px;
-  height: 4px;
-  margin: 2px;
-  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
-  background-color: var(--color-grey);
-}
+.navbar.opened {
+  .bar:first-child {
+    position: absolute;
+    transform: rotate(45deg);
+  }
 
-#topnav.opened .menu-toggle .icon-bar:first-child,
-#topnav.opened .menu-toggle .icon-bar:last-child {
-  position: absolute;
-  margin: 0;
-  width: 30px;
-}
+  .bar:nth-child(2) {
+    opacity: 0;
+  }
 
-#topnav.opened .menu-toggle .icon-bar:first-child {
-  transform: rotate(45deg);
-}
+  .bar:last-child {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
 
-#topnav.opened .menu-toggle .icon-bar:nth-child(2) {
-  opacity: 0;
-}
+  .nav-menu {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    visibility: visible;
+    z-index: 101;
+  }
 
-#topnav.opened .menu-toggle .icon-bar:last-child {
-  transform: rotate(-45deg);
-}
-
-#topnav .nav-menu {
-  position: fixed;
-  top: 65px;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 101;
-}
-
-#topnav.opened .nav-menu {
-  // background-color: rgba(0, 0, 0, 0.4);
-  opacity: 1;
-  visibility: visible;
-  z-index: 101;
-}
-
-#topnav .nav-links {
-  // list-style-type: none;
-  // max-height: 0;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 1.4rem;
-  border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-#topnav.opened .nav-links {
-  // padding: 1em;
-  max-height: none;
+  .nav-links {
+    max-height: none;
+  }
 }
 
 @media screen and (min-width: 600px) {
-  #topnav .menu-toggle {
+  .navbar .menu-toggle {
     display: none;
   }
 
-  #topnav .nav-menu,
-  #topnav.opened .nav-menu {
+  .navbar .nav-menu,
+  .navbar.opened .nav-menu {
     all: unset;
     position: static;
     display: block;
     height: 100%;
   }
 
-  #topnav .nav-links,
-  #topnav.opened .nav-links {
+  .navbar .nav-links,
+  .navbar.opened .nav-links {
     all: unset;
     list-style-type: none;
     display: flex;
