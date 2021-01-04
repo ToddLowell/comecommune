@@ -62,7 +62,8 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
 
             img {
               margin: 2rem auto 0;
-              max-width: 650px;
+              padding: 0rem 1rem;
+              max-width: 100%;
               position: relative;
               display: block;
             }
