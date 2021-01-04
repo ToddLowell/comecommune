@@ -81,10 +81,6 @@
       }
     }
 
-    &--icon {
-      // font-size: 2rem;
-    }
-
     & p {
       margin-right: 6rem;
 
@@ -138,29 +134,19 @@
   line-height: 1.6;
   font-weight: 300;
 
-  &--date {
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-
-    & i {
-      @include respond(phone) {
-        margin-right: 1.5rem;
-      }
-    }
-  }
-
   &--article {
     text-align: justify;
 
     @include respond(tab-port) {
       padding: 0 2rem;
     }
-    & strong {
+    & h2 {
+      font-size: 1.8rem;
       color: var(--color-primary);
     }
 
     &:last-of-type {
-      padding-bottom: 5rem;
+      padding-bottom: 3rem;
       border-bottom: 5px solid var(--color-primary);
 
       @include respond(phone) {
