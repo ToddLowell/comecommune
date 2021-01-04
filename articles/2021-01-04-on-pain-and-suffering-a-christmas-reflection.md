@@ -1,6 +1,6 @@
 ---
 title: "On Pain and Suffering: A Christmas Reflection"
-path: "13"
+path: on-pain-and-suffering-a-christmas-reflection
 date: 2020-12-27T14:11:58.325Z
 image_alt: ""
 ---
