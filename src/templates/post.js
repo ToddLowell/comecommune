@@ -80,13 +80,7 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
           </p>
           {(() => {
             if (post.frontmatter.image) {
-              return (
-                <img
-                  // src={post.frontmatter.image}
-                  src="/assets/11.jpeg"
-                  alt={post.frontmatter.image_alt}
-                />
-              );
+              return <img src={post.frontmatter.image} alt={post.frontmatter.image_alt} />;
             }
           })()}
           {(() => {
