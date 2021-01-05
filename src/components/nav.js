@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import onClickOutside from 'react-onclickoutside';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { css } from '@emotion/react';
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+  Navbar.handleClickOutside = () => setIsOpen(false);
+
   const { image } = useStaticQuery(graphql`
     {
       image: file(relativePath: { eq: "logo-white.png" }) {
@@ -17,16 +22,9 @@ const Navbar = () => {
   `);
 
   useEffect(() => {
+    // hardcode different style for index page
     const nav = document.querySelector('.navbar');
-    const navToggle = nav.querySelector('.menu-toggle');
 
-    // mobile navbar logic
-    navToggle.addEventListener('click', (evt) => {
-      nav.classList.toggle('opened');
-      evt.preventDefault();
-    });
-
-    // set style for index page
     if (window.location.pathname === '/') {
       nav.style.backgroundColor = 'transparent';
       nav.style.position = 'absolute';
@@ -34,7 +32,7 @@ const Navbar = () => {
   });
 
   return (
-    <div className="navbar">
+    <div className={isOpen ? 'navbar opened' : 'navbar'}>
       <nav className="nav-container container">
         <Link to="/" className="logo navbar__home">
           <Img fluid={image.sharp.fluid} alt="logo" className="navbar__home--icon" />
@@ -45,6 +43,7 @@ const Navbar = () => {
         {/* only show hamburger menu on mobile */}
         <button
           className="menu-toggle"
+          onClick={toggle}
           css={css`
             cursor: pointer;
             border: none;
@@ -103,4 +102,8 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const clickOutsideConfig = {
+  handleClickOutside: () => Navbar.handleClickOutside,
+};
+
+export default onClickOutside(Navbar, clickOutsideConfig);
