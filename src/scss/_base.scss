@@ -3,14 +3,13 @@
   --bg-primary: #fff;
 
   --color-primary: #1157e6;
-
   --color-grey: #eee;
 
   --color-black: #333;
   --color-white: #fff;
-}
 
-$container: 960px;
+  --container: 960px;
+}
 
 *,
 *::before,
@@ -37,12 +36,20 @@ html {
 }
 
 body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 19rem;
+
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--text-primary);
-
   background-color: var(--bg-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 //300 = light

@@ -1,0 +1,106 @@
+///////////////////
+// About Me Page //
+///////////////////
+
+.about-me {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5rem;
+  border-bottom: 5px solid var(--color-primary);
+
+  @include respond(tab-port) {
+    padding: 0 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  @include respond(phone) {
+    flex-direction: column-reverse;
+    @include respond(phone) {
+      padding-bottom: 2.5rem;
+    }
+  }
+
+  &__text {
+  }
+
+  &__paragraph {
+    text-align: justify;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__photo {
+    height: 30rem;
+    width: 30rem;
+    flex: 0 0 40%;
+    margin-left: 5rem;
+
+    @include respond(phone) {
+      margin: 0 auto;
+      margin-bottom: 2.5rem;
+    }
+
+    & img {
+      // height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+}
+
+// contributions
+.contributions {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @include respond(tab-port) {
+    padding: 0 2rem;
+  }
+}
+
+// contributions list
+.gradient-list {
+  counter-reset: gradient-counter;
+  list-style: none;
+  margin: 1.75rem 0;
+  padding-left: 1rem;
+
+  li {
+    background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 3rem;
+    position: relative;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    &::before {
+      background: linear-gradient(135deg, #0e4ecc 0%, #0e4ecc 50%, #d8e4fc 100%);
+      border-radius: 1rem 1rem 0 1rem;
+      content: '';
+      height: 3rem;
+      width: 3rem;
+      position: absolute;
+      left: -1rem;
+      top: -1rem;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+      content: counter(gradient-counter);
+      color: var(--color-grey);
+      font-weight: 900;
+      font-size: 2.5rem;
+      z-index: 1;
+    }
+  }
+}

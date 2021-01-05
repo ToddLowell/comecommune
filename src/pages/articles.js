@@ -8,7 +8,7 @@ export default () => {
 
   return (
     <Layout>
-      <section className="article-list">
+      <section className="article--preview__container">
         <div className="container">
           <h1 className="heading__secondary color-primary">Latest Articles</h1>
 

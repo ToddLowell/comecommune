@@ -46,7 +46,7 @@ export default () => {
         </div>
       </BackgroundImage>
 
-      <section className="article-preview">
+      <section className="article--preview__container">
         <div className="container">
           <h2 className="heading__secondary">Latest Articles</h2>
 

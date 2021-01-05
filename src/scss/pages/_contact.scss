@@ -1,0 +1,112 @@
+//////////////////
+// Contact Page //
+//////////////////
+
+// Layout
+.section {
+  &-form {
+    & h2 {
+      margin-bottom: 3rem;
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 1px;
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &-email {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+  }
+}
+
+// Contact Form
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-weight: 300;
+  position: relative;
+
+  @include respond(phone) {
+    width: 90%;
+  }
+
+  &--row {
+    display: flex;
+    // justify-content: center;
+    align-items: flex-start;
+    margin: 1rem 0;
+
+    & label {
+      flex: 0 0 25%;
+    }
+
+    & input,
+    & select {
+      flex: 0 0 75%;
+      align-self: flex-start;
+    }
+
+    & input[type='checkbox'] {
+      flex: 0 0 auto;
+    }
+  }
+}
+
+input[type='text'],
+input[type='email'],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type='checkbox'] {
+  // margin: 10px 5px 10px 0;
+  transform: translateY(5px);
+}
+
+input[type='submit'] {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+input[type='submit'] {
+  background-color: var(--color-primary);
+  border: 1px solid currentColor;
+  color: #fff;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: #0d45b7;
+  }
+
+  &:active {
+    transform: translateY(2px);
+    outline: none;
+  }
+}

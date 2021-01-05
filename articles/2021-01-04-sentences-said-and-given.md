@@ -20,7 +20,7 @@ them. It is a) and b) that are prescribed by the law for the crimes Najib has be
 was charged with seven counts, it would make sense that he is sentenced with 7 different types of
 sentences. Let me set them out in detail:
 
-<table className="table--article">
+<table>
   <tbody>
     <tr>
       <th>Charge</th>
@@ -78,7 +78,7 @@ Concurrent sentences are those where the terms of imprisonment run at the same t
 consecutive sentences where the terms of imprisonment run one after the other. The table below shows the
 result that would be produced depending on which sentencing practice is followed.
 
-<table className="table--article">
+<table>
   <tbody>
     <tr>
       <td>Consecutive sentence</td>
@@ -156,4 +156,4 @@ Appeal and contains the process and grounds that Najib’s counsel may raise in 
 advantage of the transparency of the law that pertains to court procedure and access to justice by
 clicking the hyperlink above.
 
-_For those who are keen to know more about sentencing in Malaysia, AskLegal.MY has a [really useful article](_https://asklegal.my/p/malaysian-courts-punish-criminals-jail-rotan-fine*) which sets out the law and the theoretical reasoning on criminal sentencing in Malaysia in general.\*
+\_For those who are keen to know more about sentencing in Malaysia, AskLegal.MY has a [really useful article](_https://asklegal.my/p/malaysian-courts-punish-criminals-jail-rotan-fine*) which sets out the law and the theoretical reasoning on criminal sentencing in Malaysia in general.\*

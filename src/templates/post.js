@@ -52,26 +52,11 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
   return (
     <Layout>
       {/* <pre>{JSON.stringify(pageContext, null, 2)}</pre> */}
-      <section className="article-view">
-        <div
-          className="container"
-          css={css`
-            * + * {
-              margin-top: 2rem;
-            }
-
-            img {
-              margin: 2rem auto 0;
-              padding: 0rem 1rem;
-              max-width: 100%;
-              position: relative;
-              display: block;
-            }
-          `}
-        >
-          <h2 className="heading__tertiary align-center">{post.frontmatter.title}</h2>
+      <section className="article">
+        <article className="container">
+          <h1 className="heading__tertiary">{post.frontmatter.title}</h1>
           <p
-            className="paragraph paragraph--date align-center"
+            className="paragraph"
             css={css`
               margin-top: 0rem;
             `}
@@ -81,14 +66,14 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
           </p>
           {(() => {
             if (post.frontmatter.image) {
-              return <img src={post.frontmatter.image} alt={post.frontmatter.image_alt} />;
+              return <img src={post.frontmatter.image} alt={post.frontmatter.image_alt || ''} />;
             }
           })()}
           {(() => {
             if (post.frontmatter.image_credit) {
               return (
                 <p
-                  className="paragraph align-center"
+                  className="paragraph"
                   css={css`
                     margin-top: 0.5rem;
                   `}
@@ -98,7 +83,37 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
               );
             }
           })()}
-          <p className="paragraph paragraph--article">
+          <p
+            className="paragraph--article"
+            css={css`
+              ///////////
+              // table //
+              ///////////
+
+              table {
+                border-collapse: collapse;
+                display: flex;
+                justify-content: center;
+                margin: 2rem 0;
+
+                & td,
+                th {
+                  border: 1px solid #ddd;
+                  border-width: 1px 0 1px 0;
+                  text-align: left;
+                  padding: 8px;
+                }
+
+                & th {
+                  border-top: none;
+                }
+
+                & tr:nth-of-type(even) {
+                  background-color: #f7f7f7;
+                }
+              }
+            `}
+          >
             <MDXRenderer>{post.body}</MDXRenderer>
           </p>
 
@@ -145,7 +160,7 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
               }
             })()}
           </div>
-        </div>
+        </article>
       </section>
     </Layout>
   );

@@ -16,9 +16,11 @@ Grey dark 3: #999
 
 */
 
-@import "mixins";
-@import "base";
-@import "layout";
-@import "components";
-
-@import "typography";
+@import 'mixins';
+@import 'base';
+@import 'layout';
+@import 'components';
+@import 'typography';
+@import 'pages/about';
+@import 'pages/article';
+@import 'pages/contact';

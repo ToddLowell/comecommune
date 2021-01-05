@@ -19,7 +19,7 @@ const PostPreview = ({ post }) => {
       <ArticleLink to={`/articles/${post.path}`}>
         <div className="article__preview--name">
           <h2 className="heading__tertiary">{post.title}</h2>
-          <p className="paragraph">{post.excerpt}</p>
+          <p>{post.excerpt}</p>
         </div>
       </ArticleLink>
       <Link to={`/articles/${post.path}`} className="btn-readmore">
