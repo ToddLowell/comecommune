@@ -45,5 +45,11 @@ module.exports = {
         analyzerMode: 'static',
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+        shortname: `comecommune`,
+      },
+    },
   ],
 };

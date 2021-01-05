@@ -437,11 +437,3 @@
     transform: translateY(2px);
   }
 }
-
-/////////////////////////
-// DISQUS
-#disqus_thread {
-  @include respond(tab-port) {
-    padding: 0 2rem;
-  }
-}

@@ -3,11 +3,13 @@ import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Layout from '../components/layout.js';
 import { css } from '@emotion/react';
+import { Disqus } from 'gatsby-plugin-disqus';
 
 export const query = graphql`
   query($title: String!, $title_prev: String!, $title_next: String!) {
     mdx(frontmatter: { title: { eq: $title } }) {
       frontmatter {
+        path
         title
         date
         image
@@ -48,6 +50,12 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
   ];
   const dateRaw = new Date(post.frontmatter.date);
   const date = `${months[dateRaw.getMonth()]} ${dateRaw.getDate()}, ${dateRaw.getFullYear()}`;
+
+  const disqusConfig = {
+    url: `https://comecommune.netlify.app/articles/${post.frontmatter.path}`,
+    identifier: post.frontmatter.path,
+    title: post.frontmatter.title,
+  };
 
   return (
     <Layout>
@@ -117,7 +125,8 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
             <MDXRenderer>{post.body}</MDXRenderer>
           </p>
 
-          {/* disqus */}
+          {/* Disqus */}
+          <Disqus config={disqusConfig} />
 
           <div
             className="selector"
