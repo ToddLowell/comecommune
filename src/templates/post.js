@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Img from 'gatsby-image';
 import Layout from '../components/layout.js';
 import { css } from '@emotion/react';
 import { Disqus } from 'gatsby-plugin-disqus';
@@ -12,7 +13,13 @@ export const query = graphql`
         path
         title
         date
-        image
+        image {
+          sharp: childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         image_alt
         image_credit
       }
@@ -74,7 +81,7 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
           </p>
           {(() => {
             if (post.frontmatter.image) {
-              return <img src={post.frontmatter.image} alt={post.frontmatter.image_alt || ''} />;
+              return <Img fluid={post.frontmatter.image.sharp.fluid} alt={post.frontmatter.image_alt || ''} />;
             }
           })()}
           {(() => {

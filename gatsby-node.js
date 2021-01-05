@@ -1,3 +1,12 @@
+exports.onCreateNode = ({ node }) => {
+  // modify image path in frontmatter so Sharp plugin can find it
+  if (node.internal.type === 'Mdx') {
+    if (node.frontmatter.image) {
+      node.frontmatter.image = `../static${node.frontmatter.image}`;
+    }
+  }
+};
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     query {

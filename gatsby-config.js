@@ -12,14 +12,10 @@ module.exports = {
     'gatsby-plugin-sharp',
     `gatsby-plugin-netlify-cms`,
     {
-      resolve: 'gatsby-plugin-mdx',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        extensions: [`.mdx`, `.md`],
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
-        },
-        gatsbyRemarkPlugins: ['gatsby-remark-images'],
-        plugins: ['gatsby-remark-images'],
+        name: 'assets',
+        path: `${__dirname}/static`,
       },
     },
     {
@@ -34,6 +30,17 @@ module.exports = {
       options: {
         name: 'images',
         path: `${__dirname}/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          default: require.resolve('./src/components/layout.js'),
+        },
+        gatsbyRemarkPlugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
+        plugins: ['gatsby-remark-relative-images-v2', 'gatsby-remark-images'],
       },
     },
     {

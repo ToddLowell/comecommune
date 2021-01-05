@@ -32,6 +32,7 @@
     "gatsby-plugin-sharp": "^2.11.2",
     "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-remark-images": "^3.8.1",
+    "gatsby-remark-relative-images-v2": "^0.1.5",
     "gatsby-source-filesystem": "^2.8.1",
     "gatsby-transformer-sharp": "^2.9.0",
     "netlify-cms-app": "^2.14.8",
