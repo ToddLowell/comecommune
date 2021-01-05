@@ -18,6 +18,8 @@
   }
 
   &__home {
+    display: flex;
+    align-items: center;
     margin-right: auto;
     color: var(--color-primary);
     font-family: 'Abel', sans-serif;
@@ -33,6 +35,8 @@
     }
 
     &--text {
+      margin-left: 1.5rem;
+
       @include respond(phone) {
         display: none;
       }
