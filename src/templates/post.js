@@ -77,7 +77,7 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
         {/* OpenGraph */}
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
-        <meta property="og:url" content={'https://comecommune.netlify.app/articles/' + post.frontmatter.path} />
+        <meta property="og:url" content={'https://comecommune.netlify.app/articles/' + post.frontmatter.path + '/'} />
         {post.frontmatter.image && (
           <meta
             property="og:image"
