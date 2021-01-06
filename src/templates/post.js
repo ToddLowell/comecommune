@@ -105,6 +105,10 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
               // table //
               ///////////
 
+              blockquote {
+                padding-left: 4rem;
+              }
+
               table {
                 border-collapse: collapse;
                 display: flex;

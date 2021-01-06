@@ -49,4 +49,4 @@ If you dislike the idea that free will is absent (as some readers might), do not
 
 ---
 
-<sup>1</sup> [https://transcripts.foreverdreaming.org/viewtopic.php?f=177&t=11612](https://transcripts.foreverdreaming.org/viewtopic.php?f=177&t=11612)
+\[1] <https://transcripts.foreverdreaming.org/viewtopic.php?f=177&t=11612>

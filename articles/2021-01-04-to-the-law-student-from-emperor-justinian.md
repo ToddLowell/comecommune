@@ -1,8 +1,9 @@
 ---
 title: To the Law Student, From Emperor Justinian
-path: "12"
+path: '12'
 date: 2020-08-28T10:45:33.674Z
 ---
+
 Every Roman law student would have heard of the great Emperor Justinian. We would have heard things, both good and
 bad, about his understanding (or misunderstanding) of the classical law, tarnishing its purity and sophistication. We
 would have heard of his extrapolations of texts in the Digest, arbitrary categorisations of law and perhaps Roman law
@@ -18,27 +19,13 @@ the heart of a law student even today.
 In Institutes of Justinian<sup>1</sup> I.I.2, right at the beginning, in a heading entitled “Of Justice and Law”,
 Justinian writes:
 
-<p className="paragraph--indent">
-  <sub>
-    our object being the exposition of the law of the Roman people, we think that the most advantageous plan will be to
-    commence with an easy and simple path, and then to proceed to details with a most careful and scrupulous exactness
-    of interpretation. (Emphasis added)
-  </sub>
-</p>
+> our object being the exposition of the law of the Roman people, we think that the most advantageous plan will be to commence with an easy and simple path, and then to proceed to details with a most careful and scrupulous exactness of interpretation. (Emphasis added)
 
 Here he sets out an educational approach for law students that consists of a two-step plan. Firstly, to begin their teaching
 “with an easy and simple path”, then only to, secondly, go on to consider the details with the methodology of careful scrutiny.
 To assert the importance of this educational approach, Justinian provides the consequence of failing to do so:
 
-<p className="paragraph--indent">
-  <sub>
-    Otherwise, if we begin by burdening the student's memory, as yet weak and untrained, with a multitude and variety of
-    matters, one of two things will happen: either we shall cause him wholly to desert the study of law, or else we
-    shall bring him at last, after great labour, and often, too, distrustful of his own powers (the commonest cause,
-    among the young, of ill-success), to a point which he might have reached earlier, without such labour and confident
-    in himself, had he been led along a smoother path.
-  </sub>
-</p>
+> Otherwise, if we begin by burdening the student's memory, as yet weak and untrained, with a multitude and variety of matters, one of two things will happen: either we shall cause him wholly to desert the study of law, or else we shall bring him at last, after great labour, and often, too, distrustful of his own powers (the commonest cause, among the young, of ill-success), to a point which he might have reached earlier, without such labour and confident in himself, had he been led along a smoother path.
 
 I seldom begin a blog with a personal anecdote, but I think it is fitting this time as I have just gone through the perils
 of first year law, in an institution where Roman law is a mandatory first-year subject. In hindsight, if I had approached
@@ -131,12 +118,7 @@ will never do enough”, alternating with the other whispering that “what I ha
 what C.S. Lewis meant when he said that the devil “always sends errors into the world in pairs”<sup>3</sup>. Lewis
 continues:
 
-<p className="paragraph--indent">
-  <sub>
-    he always encourages us to spend a lot of time thinking which is the worse. You see why, of course? He relies on
-    your extra dislike of the one error to draw you gradually into the opposite one<sup>4</sup>.
-  </sub>
-</p>
+> he always encourages us to spend a lot of time thinking which is the worse. You see why, of course? He relies on your extra dislike of the one error to draw you gradually into the opposite one<sup>4</sup>.
 
 As we cycle between the first error and the second, we build the momentum of distrust. This is as Justinian points out “the
 commonest cause, among the young, of ill-success”. We then harm ourselves by bashing our worthiness, when we should have
@@ -170,22 +152,16 @@ Because justice and law are transgenerational and transcultural. Lawyers, are no
 I both fittingly and unfittingly end this blog with the end of the prelude to the Institutes of Justinian,
 addressed “\[t]o the youth desirous of studying the law”<sup>5</sup>:
 
-<p className="paragraph--indent">
-  <sub>
-    Receive then these laws with your best powers and with the eagerness of study, and show yourselves so learned as to
-    be encouraged to hope that when you have compassed the whole field of law you may have ability to govern such
-    portion of the state as may be entrusted to you.
-  </sub>
-</p>
+> Receive then these laws with your best powers and with the eagerness of study, and show yourselves so learned as to be encouraged to hope that when you have compassed the whole field of law you may have ability to govern such portion of the state as may be entrusted to you.
 
-- - -
+---
 
 <sup>1</sup>Translated into English by J.B. Moyle
-
+<br />
 <sup>2</sup>The Tools of Argument: How the Best Lawyers Think, Argue, and Win
-
+<br />
 <sup>3</sup>C.S. Lewis, Mere Christianity
-
+<br />
 <sup>4</sup>Ibid.
-
+<br />
 <sup>5</sup>Justinian, Institutes of Justinian, Prooemivm (Prelude)
