@@ -3,6 +3,7 @@ import Navbar from './nav.js';
 import Footer from './footer.js';
 import Helmet from 'react-helmet';
 import useSiteMetadata from '../hooks/use-sitemetadata.js';
+import LogoBlack from '../../images/logo-black.png';
 
 import '../scss/main.scss';
 import '../icofont/icofont.css';
@@ -29,7 +30,7 @@ const Layout = ({ children }) => {
         <meta property="og:description" content={description} />
         <meta property="og:url" content="https://comecommune.netlify.app/" />
         <meta property="og:type" content="article" />
-        <meta property="og:image" content="/logo-black.png" />
+        <meta property="og:image" content="https://comecommune.netlify.app/logo-black.png" />
         <meta property="og:image:width" content="500" />
         <meta property="og:image:height" content="500" />
       </Helmet>

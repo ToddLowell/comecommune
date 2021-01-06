@@ -78,7 +78,12 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
         <meta property="og:title" content={post.frontmatter.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:url" content={'https://comecommune.netlify.app/articles/' + post.frontmatter.path} />
-        {post.frontmatter.image && <meta property="og:image" content={post.frontmatter.image.sharp.fluid.src} />}
+        {post.frontmatter.image && (
+          <meta
+            property="og:image"
+            content={'https://comecommune.netlify.app' + post.frontmatter.image.sharp.fluid.src}
+          />
+        )}
         {post.frontmatter.image && (
           <meta property="og:image:width" content={post.frontmatter.image.sharp.fluid.presentationWidth} />
         )}
