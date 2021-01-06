@@ -3,7 +3,6 @@ import Navbar from './nav.js';
 import Footer from './footer.js';
 import Helmet from 'react-helmet';
 import useSiteMetadata from '../hooks/use-sitemetadata.js';
-import LogoBlack from '../../images/logo-black.png';
 
 import '../scss/main.scss';
 import '../icofont/icofont.css';
