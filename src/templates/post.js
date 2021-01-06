@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Img from 'gatsby-image';
@@ -16,6 +17,9 @@ export const query = graphql`
         image {
           sharp: childImageSharp {
             fluid {
+              src
+              presentationWidth
+              presentationHeight
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -24,6 +28,7 @@ export const query = graphql`
         image_credit
       }
       body
+      excerpt(pruneLength: 260)
     }
     prev: mdx(frontmatter: { title: { eq: $title_prev } }) {
       frontmatter {
@@ -66,6 +71,20 @@ const PostTemplate = ({ /*pageContext,*/ data: { mdx: post, prev: prev_post, nex
 
   return (
     <Layout>
+      <Helmet>
+        <title>{post.frontmatter.title} | ComeCommune</title>
+
+        {/* OpenGraph */}
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta property="og:description" content={post.excerpt} />
+        {post.frontmatter.image && <meta property="og:image" content={post.frontmatter.image.sharp.fluid.src} />}
+        {post.frontmatter.image && (
+          <meta property="og:image:width" content={post.frontmatter.image.sharp.fluid.presentationWidth} />
+        )}
+        {post.frontmatter.image && (
+          <meta property="og:image:height" content={post.frontmatter.image.sharp.fluid.presentationHeight} />
+        )}
+      </Helmet>
       {/* <pre>{JSON.stringify(pageContext, null, 2)}</pre> */}
       <section className="article">
         <article className="container">
