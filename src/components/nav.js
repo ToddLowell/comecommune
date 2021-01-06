@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import onClickOutside from 'react-onclickoutside';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { css } from '@emotion/react';
@@ -7,7 +6,6 @@ import { css } from '@emotion/react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
-  Navbar.handleClickOutside = () => setIsOpen(false);
 
   const { image } = useStaticQuery(graphql`
     {
@@ -102,8 +100,4 @@ const Navbar = () => {
   );
 };
 
-const clickOutsideConfig = {
-  handleClickOutside: () => Navbar.handleClickOutside,
-};
-
-export default onClickOutside(Navbar, clickOutsideConfig);
+export default Navbar;
