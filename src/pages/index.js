@@ -1,26 +1,16 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-// import styled from '@emotion/styled';
 import Layout from '../components/layout.js';
 import PostPreview from '../components/post-preview-main-page.js';
 import usePosts from '../hooks/use-posts.js';
 
 export default () => {
-  // const HeroLayout = styled(Layout)`
-  //   > * {
-  //     border: 1px solid red;
-  //   }
-
-  //   .navbar {
-  //     background-color: #ff0000;
-  //   }
-  // `;
   const { image } = useStaticQuery(graphql`
     {
       image: file(relativePath: { eq: "hero.jpg" }) {
         sharp: childImageSharp {
-          fluid {
+          fluid(maxWidth: 1605, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
