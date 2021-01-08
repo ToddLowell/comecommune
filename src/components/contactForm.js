@@ -59,11 +59,11 @@ const Form = () => {
         return res.json();
       })
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setStatus('SUCCESS');
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
         setStatus('ERROR');
       });
   };
