@@ -18,30 +18,28 @@
   }
 
   &-email {
-    margin-top: 10rem;
+    margin-top: 3rem;
     margin-bottom: 2rem;
 
     @include respond(tab-port) {
-      padding: 0 2rem;
+      margin: 0 2rem;
     }
   }
 }
 
 // Contact Form
 .contact-form {
-  width: 60%;
+  position: relative;
   margin: 0 auto;
   font-size: 1.8rem;
   font-weight: 300;
-  position: relative;
 
-  @include respond(phone) {
-    width: 90%;
+  @include respond(tab-port) {
+    margin: 0 2rem;
   }
 
   &--row {
     display: flex;
-    // justify-content: center;
     align-items: flex-start;
     margin: 1rem 0;
 
@@ -57,56 +55,86 @@
 
     & input[type='checkbox'] {
       flex: 0 0 auto;
+      align-self: center;
+    }
+  }
+
+  &.pending {
+    position: relative;
+
+    &::before {
+      content: '';
+      background: white;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 70%;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%;
+      border: 6px solid;
+      border-color: var(--color-primary) transparent var(--color-primary) transparent;
+      left: calc(50% - 4rem);
+      top: calc(50% - 4rem);
+      animation: loading 1s infinite linear;
+    }
+  }
+
+  input[type='text'],
+  input[type='email'],
+  select,
+  textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  input[type='submit'] {
+    display: block;
+    margin-left: auto;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    background-color: var(--color-primary);
+    border: 1px solid currentColor;
+    color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #0d45b7;
+    }
+
+    &:active {
+      transform: translateY(2px);
+      outline: none;
     }
   }
 }
 
-input[type='text'],
-input[type='email'],
-select,
-textarea {
-  width: 100%;
-  padding: 7px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-textarea {
-  height: 100px;
-}
-
-input[type='checkbox'] {
-  // margin: 10px 5px 10px 0;
-  transform: translateY(5px);
-}
-
-input[type='submit'] {
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  padding: 10px 30px;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  transition: background-color 0.2s, border 0.2s, color 0.2s;
-}
-
-input[type='submit'] {
-  background-color: var(--color-primary);
-  border: 1px solid currentColor;
-  color: #fff;
-  transition: all 0.2s;
-
-  &:hover {
-    background-color: #0d45b7;
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
   }
 
-  &:active {
-    transform: translateY(2px);
-    outline: none;
+  to {
+    transform: rotate(360deg);
   }
 }
