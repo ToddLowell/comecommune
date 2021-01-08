@@ -8,7 +8,7 @@ exports.handler = (event, _context, callback) => {
 
   const data = {
     from: `${email.name} <${email.email}>`,
-    to: 'Brendan Low <bsll2@cam.ac.uk>',
+    to: 'brendanlowsl@gmail.com',
     subject: `Email From ComeCommune: ${email.subject}`,
     text: `
           Sign Up for Newsletter?:\n
