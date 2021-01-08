@@ -5,6 +5,7 @@ const INITIAL_STATE = {
   name: '',
   email: '',
   newsletter: false,
+  subject: '',
   message: '',
   status: 'IDLE',
 };
@@ -184,6 +185,17 @@ const Form = () => {
             id="news"
             value={state.newsletter}
             onChange={updateFieldValue('newsletter')}
+          />
+        </div>
+        <div className="contact-form--row">
+          <label htmlFor="email">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Email Subject"
+            value={state.subject}
+            onChange={updateFieldValue('subject')}
           />
         </div>
         <div className="contact-form--row">
