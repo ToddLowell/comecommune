@@ -8,15 +8,18 @@ exports.handler = (event, _context, callback) => {
 
   const data = {
     from: `${email.name} <${email.email}>`,
-    to: 'raaed.kabir@gmail.com',
+    to: 'Brendan Low <bsll2@cam.ac.uk>',
     subject: `Email From ComeCommune: ${email.subject}`,
-    text: `Sign Up for Newsletter?: ${email.newsletter ? 'Yes' : 'No'}\n\n
-           Message: \n\n
-           ${email.message}`,
+    text: `
+          Sign Up for Newsletter?:\n
+    ${email.newsletter ? 'Yes' : 'No'}\n\n
+          Message: \n
+    ${email.message}
+    `,
   };
 
   mailgun.messages().send(data, (error, body) => {
-    // console.log(body);
+    console.log(body);
 
     callback(error, {
       statusCode: 200,
